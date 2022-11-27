@@ -1,5 +1,15 @@
-@import "https://fonts.googleapis.com/css?family=Ubuntu:300,400,500";
-
+/*configuramos la fuente asi no necesitamos importar fuente porque usamos las que descargamos*/
+font-face {
+	/*Nombre*/
+	font-family: "Ubuntu";
+	/*url online o local*/
+	src: url("../assets/fonts/ubuntu-regular.woff2") format('woff2'),
+			 url("../assets/fonts/ubuntu-regular.woff") format('woff');
+			 /*grosor*/
+	font-weight: 400;
+	/*estilo*/
+	font-style: normal;
+}
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;

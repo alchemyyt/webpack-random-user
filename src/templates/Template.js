@@ -1,5 +1,9 @@
-import getData from '../utils/getData.js';
+import getData from '@utils/getData.js';//importamos el api con un alias si queremos saber la ruta de el alias ir a webpack config
 
+//gracias al loader que tiene webpack podemos importar las imagenes y usarlas en una variables asi no tenemos que poner los url y no hay tantos errores al copiar archivos con el otro plugin y genera un hash
+import github from '@images/github.png';
+import twitter from '@images/twitter.png';
+import instagram from '@images/instagram.png';
 const Template = async () => {
   const data = await getData();
   const view = `
@@ -24,13 +28,13 @@ const Template = async () => {
         </div>
         <div class="card_social">
           <a href="https://twitter.com/gndx">
-            <img src="../src/assets/images/twitter.png" />
+            <img src="${twitter}" />
           </a>
           <a href="https://github.com/gndx">
-            <img src="../src/assets/images/github.png" />
+            <img src="${github}" />
           </a>
-          <a href="https://instagram.com/gndx">
-            <img src="../src/assets/images/instagram.png" />
+          <a href="${instagram}">
+            <img src="assets/images/instagram.png" />
           </a>
         </div>
       </div>

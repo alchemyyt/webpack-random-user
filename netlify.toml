@@ -1,0 +1,3 @@
+[build]
+  publish = "dist"  #Que carpeta desplegamos
+  command = "npm run build"  #gQue comando usamos
